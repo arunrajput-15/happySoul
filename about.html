@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>HappySoul</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HappySoul</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/meditation.html">Meditation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About US</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Self-Improvement
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Inspiration</a></li>
+                            <li><a class="dropdown-item" href="#">Happiness</a></li>
+                            <li><a class="dropdown-item" href="#">Stress Management</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Help</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+                <div>
+
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal"> Login
+                    </button>
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!--login  Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login in HappySoul</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- sign upModal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby=signupeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an account on HappySoul</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">User Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-4 ">
+        <div class="row featurette d-flex justify-conten-center align-items-center ">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">HappySoul <span class="text-muted">It’ll blow your
+                        mind.Stay with HappySoul and make your full of joy</span></h2>
+                <p class="lead">Welcome to our site.We help people who are in depression or any other negative
+                    situatons.join us and make a happy world </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-4"
+                    width="500" height="500" src="about_f.jpg" alt="">
+
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-conten-center align-items-center ">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Who we are <span class="text-muted"></span></h2>
+                <p class="lead">HappySoul is a trusted and compassionate online resource that provide the guidance you
+                    need to improve your mental health and find blance.The Happysoul review Board is a team of
+                    board-certifed physicians and establised mental health experts who joins us in our mission to be
+                    compassionate resource that hepls you prioritize your mental health and well-being.
+                <p>
+            </div>
+            <div class="col-md-5 ">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto my-4"
+                    width="500" height="500" src="smile1.jpg" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Happysoul</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4"> Spread Love <br>
+                    Whenever you go. <br>
+                    Let no one <br>
+                    Ever Come To You <br>
+                    Without Leaving <br>
+                    Happier</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+                    <P>Follow on instagram <a
+                            href="https://www.instagram.com/invites/contact/?i=1h9i7slgmun7b&utm_content=1nxh4iv"  target="blank">Arun
+                            Rajput</a></P>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto text-white-50">
+            <p>Copyright © www.HotMeal.com all rights reserved! <a class="text-white"></p>
+        </footer>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
